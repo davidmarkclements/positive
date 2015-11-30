@@ -5,12 +5,12 @@ module.exports = positive
 
 function positive(question, defaultAnswer) {
 
-  //waiting for https://github.com/0xxff/prompt-sync/pull/7 to land
-  var y = prompt({value: question, echo: ''}).replace(question, '')
-
+  //change value to ask when https://github.com/0xxff/prompt-sync/pull/7 lands
+  var y = prompt({value: question, echo: ''})
   //remove when https://github.com/0xxff/prompt-sync/pull/5 lands
   if (y === null) { process.exit(130) }
 
-  return yn(y || defaultAnswer || true)
+  //remove replace when https://github.com/0xxff/prompt-sync/pull/7 lands
+  return yn(y.replace(question, '') || defaultAnswer || true)
 
 }
