@@ -13,7 +13,7 @@ require('positive') => (question = '', defaultAnswer = true) => Boolean
 ```js
 var confirm = require('positive')
 
-var sure = confirm('Are you sure', false)
+var sure = confirm('Are you sure? [y/N] ', false)
 
 console.log(sure ? 'excellent.' : 'oh')
 ```
