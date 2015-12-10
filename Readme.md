@@ -20,15 +20,9 @@ console.log(sure ? 'excellent.' : 'oh')
 
 ## About
 
-Combines [`prompt-sync`][] and [`yn`][]. 
+Combines [`syncoprompt`][] and [`yn`][]. 
 
 [`yn`][] is a simple module that determines a yes/no answer.
-
-[`prompt-sync`][] is an outstanding module that provides synchronous
-CLI interaction without using a native module - very elegant. 
-
-If you're looking for something that gives more than y/n answer
-functionality, try `prompt-sync`.
 
 ## Synchronous by Design
 
@@ -41,5 +35,5 @@ requirements).
 
 * Sponsored by nearForm
 
-[`prompt-sync`]: http://npmjs.com/prompt-sync
+[`syncoprompt`]: http://npmjs.com/syncoprompt
 [`yn`]: http://npmjs.com/yn
