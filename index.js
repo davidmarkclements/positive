@@ -6,6 +6,6 @@ module.exports = positive
 function positive(question, defaultAnswer) {
   return yn(
     prompt(question) || 
-    typeof defaultAnswer === 'boolean' ? defaultAnswer : true
+    (typeof defaultAnswer === 'boolean' ? defaultAnswer : true)
   )
 }
